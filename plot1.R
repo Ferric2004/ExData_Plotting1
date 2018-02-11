@@ -1,6 +1,7 @@
 #Read the file in a clean way. 
-"Origin" is a placeholder name assigned to the file path in your local folder
+#Origin" is a placeholder name assigned to the file path in your local folder
 
+library(dplyr)
 source <- read.table(origin, sep = ";", stringsAsFactors = FALSE, na.strings = "?", colClasses = c("character", "character", "numeric", "numeric", "numeric","numeric", "numeric", "numeric"), header = TRUE)
 
 
